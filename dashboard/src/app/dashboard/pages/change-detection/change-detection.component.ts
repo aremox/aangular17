@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     selector: 'app-change-detection',
     standalone: true,
     imports: [CommonModule],
-    template: './change-detection.component.html',
+    templateUrl: './change-detection.component.html',
     styles: ``,
 })
-export class ChangeDetectionComponent { }
+export default class ChangeDetectionComponent { }
