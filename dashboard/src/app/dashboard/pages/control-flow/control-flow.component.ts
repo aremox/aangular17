@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-control-flow',
@@ -9,5 +9,11 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export default class ControlFlowComponent {
+
+  public showContent = signal(false);
+
+  public toggleContent() {
+    this.showContent.update( value => !value);
+  }
 
 }
