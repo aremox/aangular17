@@ -26,7 +26,7 @@ export const routes: Routes = [
         loadComponent: () => import('./dashboard/pages/defer-views/defer-views.component'),
       },
       {
-        path: 'user',
+        path: 'user/:id',
         title: 'User',
         loadComponent: () => import('./dashboard/pages/user/user.component'),
       },
